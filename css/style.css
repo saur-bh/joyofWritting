@@ -1,0 +1,167 @@
+
+body{
+    margin: 0%;
+}
+.container-1{
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+
+
+}
+
+h1{
+ font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode';
+ border-bottom: 5px solid orangered;
+
+ width: 40%;
+ text-align: center;
+ margin-bottom: 2%;
+ 
+ margin-left: 20%;
+ transition:all 1s ;
+ 
+}
+h1:hover{
+
+     animation-name: example;
+    animation-duration: 4s;
+}
+
+
+img{
+    width: 700px;
+    height: 300px;
+    margin: 10px 10px 10px 10px;
+     transition:all 1s ;
+    
+    }
+
+img:hover{
+    transform: scale(1.1);
+    animation-name: example;
+    animation-duration: 4s;
+   
+}
+
+@keyframes example {
+    0%   {box-shadow: 4px 4px 5px 4px red;}
+    25% {box-shadow: 4px 4px 5px 4px yellow;}
+    75% {box-shadow: 4px 4px 5px 4px green;}
+    100% {box-shadow: 4px 4px 5px 4px blueviolet;}
+ 
+  }
+
+  .robots {
+    width: 200px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+     justify-content: center;
+     margin-left: 20%;
+     
+}
+
+.head, 
+.left_arm, 
+.torso, 
+.right_arm, 
+.left_leg, 
+.right_leg {
+	background-color: #5f93e8;
+}
+
+.head { 
+	width: 200px; 
+	margin: 0 auto; 
+	height: 150px; 
+	border-radius: 200px 200px 0 0; 
+	margin-bottom: 10px;
+} 
+
+.eyes {
+	display: flex;
+}
+
+.head:hover {
+	width: 300px;
+    transition: 1s ease-in-out;
+}
+
+.upper_body { 
+	width: 300px; 
+	height: 150px;
+	display: flex; 
+} 
+
+.left_arm, .right_arm { 
+	width: 40px; 
+	height: 125px;
+	border-radius: 100px; 
+} 
+
+.left_arm { 
+	margin-right: 10px; 
+} 
+
+.right_arm { 
+	margin-left: 10px; 
+} 
+
+.torso { 
+	width: 200px; 
+	height: 200px;
+	border-radius: 0 0 50px 50px; 
+} 
+
+.lower_body { 
+	width: 200px; 
+	height: 200px;
+	/* This is another useful property. Hmm what do you think it does?*/
+	margin: 0 auto;display: flex; 
+
+} 
+
+.left_leg, .right_leg { 
+	width: 40px; 
+	height: 120px;
+	border-radius: 0 0 100px 100px; 
+} 
+
+.left_leg { 
+	margin-left: 45px; 
+} 
+
+.left_leg:hover {
+	-webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.right_leg { 
+	margin-left: 30px; 
+}
+
+.left_eye, .right_eye { 
+	width: 20px; 
+	height: 20px; 
+	border-radius: 15px ; 
+	background-color: white;  
+} 
+
+.left_eye { 
+	/* These properties are new and you haven't encountered
+	in this course. Check out CSS Tricks to see what it does! */
+	position: relative; 
+	top: 100px; 
+	left: 40px; 
+} 
+
+.right_eye { 
+	position: relative; 
+	top: 100px; 
+	left: 120px; 
+}
